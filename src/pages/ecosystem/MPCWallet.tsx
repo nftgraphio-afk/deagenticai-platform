@@ -3,6 +3,7 @@ import { EcosystemServiceLayout, EcosystemServiceProps } from '@/components/Ecos
 
 const mpcWalletData: EcosystemServiceProps = {
   name: "MPC Wallet Infrastructure",
+  activeStep: "MPC MECHANISM",
   oneSentenceExplanation: "Enterprise-grade distributed key management for autonomous agent wallets.",
   definition: "MPC Wallet Infrastructure is a decentralized custody solution that uses Multi-Party Computation to shard private keys across a distributed network of nodes. It ensures that autonomous AI agents can execute on-chain transactions without ever having access to a complete private key, eliminating single points of failure and unauthorized signature risks.",
   whyExists: {

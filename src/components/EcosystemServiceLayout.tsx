@@ -15,10 +15,11 @@ import {
   Info,
   Lock
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { HexDock } from './ui/HexDock';
 
 export interface EcosystemServiceProps {
   name: string;
+  activeStep?: string;
   oneSentenceExplanation: string;
   definition: string;
   whyExists: {
@@ -122,6 +123,11 @@ export function EcosystemServiceLayout(props: EcosystemServiceProps) {
               </button>
             </div>
           </motion.div>
+        </section>
+
+        {/* Happy Path Dock */}
+        <section className="mb-32">
+          <HexDock activeStep={props.activeStep} className="py-0" />
         </section>
 
         {/* SECTION 1 — Why It Exists */}
