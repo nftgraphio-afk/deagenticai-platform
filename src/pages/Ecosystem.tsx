@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, ShieldCheck, Cpu, Database, FileSearch, Lock, Zap, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Cpu, FileSearch, Lock, Shield, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ControlPlaneAnimation } from '../components/ecosystem/ControlPlaneAnimation';
+import { HexDock } from '../components/ui/HexDock';
 
 export function Ecosystem() {
   const faqSchema = {
@@ -153,6 +154,10 @@ export function Ecosystem() {
           </h2>
           
           <ControlPlaneAnimation />
+
+          <div className="mt-20">
+            <HexDock />
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
             {[
